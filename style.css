@@ -1,42 +1,54 @@
-/* exo-2-300 - latin_cyrillic */
+/*!
+Theme Name: Blagorodnyi
+Theme URI: http://underscores.me/
+Author: Pavlo Knyazevich
+Author URI: https://github.com/Knyazevich
+Description: Custom theme: Blagorodnyi, developed by Pavlo Knyazevich
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mst_blag
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: local('Exo 2 Light'), local('Exo2-Light'),
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-300.woff2') format('woff2'),
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-300.woff') format('woff');
 }
-/* exo-2-regular - latin_cyrillic */
+
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Exo 2 Regular'), local('Exo2-Regular'),
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-regular.woff2') format('woff2'),
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-regular.woff') format('woff');
 }
-/* exo-2-500 - latin_cyrillic */
+
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: local('Exo 2 Medium'), local('Exo2-Medium'),
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-500.woff2') format('woff2'),
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-500.woff') format('woff');
 }
-/* exo-2-600 - latin_cyrillic */
+
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: local('Exo 2 SemiBold'), local('Exo2-SemiBold'),
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/exo-2-v7-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-600.woff2') format('woff2'),
+       url('./assets/fonts/exo-2-v7-latin_cyrillic-600.woff') format('woff');
 }
 
 @font-face {
@@ -44,8 +56,8 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url('./assets/fonts/lemon_tuesday.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./assets/fonts/lemon_tuesday.woff') format('woff'); /* Firefox >= 3.6, any other modern browser */
+  src: url('./assets/fonts/lemon_tuesday.woff2') format('woff2'),
+       url('./assets/fonts/lemon_tuesday.woff') format('woff');
 }
 
 body {
@@ -574,13 +586,17 @@ h5 {font-size: 16px; letter-spacing: normal;}
   right: 300px;
 }
 
+.slick-slide {
+  margin: 0 10px;
+}
+
 .reports__gallery {
   position: relative;
 }
 
 .reports__gallery-row {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
   width: 100%;
   margin-bottom: 10px;
 }
@@ -591,12 +607,12 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .reports__gallery-row--top .reports__gallery-img-box {
-  width: 32.5%;
+  /*width: 32.5%;*/
   height: 200px;
 }
 
 .reports__gallery-row--bottom .reports__gallery-img-box {
-  width: 19.5%;
+  /*width: 19.5%;*/
   height: 150px
 }
 
@@ -1391,4 +1407,15 @@ h5 {font-size: 16px; letter-spacing: normal;}
   .popup__img-box {
     height: 40%;
   }
+}
+
+.header__nav-link.header__nav-link--active {
+  background-color: red;
+}
+
+.clipboard-tooltip {
+  border: 1px dotted red;
+  background-color: #ddd;
+  position: absolute;
+  display: none;
 }
