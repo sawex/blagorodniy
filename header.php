@@ -36,9 +36,9 @@
             <li class="header__nav-list-item">
               <a href="#result" class="header__nav-link">Результаты</a>
             </li>
-            <li class="header__nav-list-item">
-              <a href="#reports" class="header__nav-link">Отчеты</a>
-            </li>
+<!--            <li class="header__nav-list-item">-->
+<!--              <a href="#reports" class="header__nav-link">Отчеты</a>-->
+<!--            </li>-->
             <li class="header__nav-list-item">
               <a href="#help" class="header__nav-link">Помощь</a>
             </li>
@@ -47,9 +47,8 @@
             </li>
           </ul>
           <ul class="header__contacts-list">
-            <!-- TODO: header__conttact -->
-            <li class="header__conttact-item">
-              <a href="tel:+79221150777" class="header__contact-link">+7-922-1150-777</a>
+            <li class="header__contact-item">
+              <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
             </li>
           </ul>
         </nav>
@@ -65,9 +64,9 @@
               <li class="header__nav-list-item">
                 <a href="#objectives" class="header__nav-link">Цели</a>
               </li>
-              <li class="header__nav-list-item">
-                <a href="#activities" class="header__nav-link">Отчеты</a>
-              </li>
+<!--              <li class="header__nav-list-item">-->
+<!--                <a href="#reports" class="header__nav-link">Отчеты</a>-->
+<!--              </li>-->
               <li class="header__nav-list-item">
                 <a href="#requisites" class="header__nav-link">Реквизиты</a>
               </li>
@@ -93,9 +92,9 @@
                 <li class="header__nav-list-item">
                   <a href="#result" class="header__nav-link">Результаты</a>
                 </li>
-                <li class="header__nav-list-item">
-                  <a href="#reports" class="header__nav-link">Отчеты</a>
-                </li>
+<!--                <li class="header__nav-list-item">-->
+<!--                  <a href="#reports" class="header__nav-link">Отчеты</a>-->
+<!--                </li>-->
                 <li class="header__nav-list-item">
                   <a href="#help" class="header__nav-link">Помощь</a>
                 </li>
@@ -105,8 +104,8 @@
               </ul>
 
               <ul class="header__contacts-list">
-                <li class="header__conttact-item">
-                  <a href="tel:+79221150777" class="header__contact-link">+7-922-1150-777</a>
+                <li class="header__contact-item">
+                  <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
                 </li>
               </ul>
             </div>

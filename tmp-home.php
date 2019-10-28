@@ -19,10 +19,10 @@ get_header();
               <h2 class="props__secondary-title">Реквизиты</h2>
               <p class="text">Помогите детям, перечислив деньги  на счет Благотворительного  Фонда “Благородный”</p>
               <p class="text">
-                <span class="text-bold">Приват:</span>
+                <span class="text-bold">Приват (UAH):</span>
                 <a class="text-to-copy"
-                   data-clipboard-text="5453-4325-6463-5435">
-                  5453-4325-6463-5435
+                   data-clipboard-text="5169330520036481">
+                  5169-3305-2003-6481
                 </a>
               </p>
 
@@ -47,14 +47,6 @@ get_header();
                 <a class="text-to-copy"
                    data-clipboard-text="MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV">
                   MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV
-                </a>
-              </p>
-
-              <p class="text">
-                <span class="text-bold">Эфир:</span>
-                <a class="text-to-copy"
-                   data-clipboard-text="3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk">
-                  3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk
                 </a>
               </p>
             </div>
@@ -230,107 +222,7 @@ get_header();
       </div>
     </section>
 
-    <section class="reports" id="reports" data-scrollspy-id="reports">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="reports__title">Отчёты</h2>
-            <div class="reports__gallery">
-
-              <div class="reports__gallery-row reports__gallery-row--top">
-                <div class="reports__gallery-img-box reports__gallery-img-box--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-1.png" alt="" class="reports__gallery-img">
-                  <button class="reports__gallery-play-btn"></button>
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-2.png" alt="" class="reports__gallery-img">
-                  <button class="reports__gallery-play-btn"></button>
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-3.png" alt="" class="reports__gallery-img">
-                  <button class="reports__gallery-play-btn"></button>
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-2.png" alt="" class="reports__gallery-img">
-                  <button class="reports__gallery-play-btn"></button>
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-3.png" alt="" class="reports__gallery-img">
-                  <button class="reports__gallery-play-btn"></button>
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reports__gallery-row reports__gallery-row--bottom">
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-4.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-5.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-6.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-7.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-8.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-8.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-
-                <div class="reports__gallery-img-box reports__gallery-img-box--bottom">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/photo-8.png" alt="" class="reports__gallery-img">
-                  <div class="reports__gallery-desc">
-                    <p class="text reports__gallery-desc-text">Как наши волонтеры детям в Малой Малиновке помогали!</p>
-                  </div>
-                </div>
-              </div>
-
-              <nav class="reports__gallery-nav">
-                <button class="reports__gallery-nav-btn reports__gallery-nav-btn--prev"></button>
-                <button class="reports__gallery-nav-btn reports__gallery-nav-btn--next"></button>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Reports was here -->
 
     <section class="help" id="help" data-scrollspy-id="help">
       <div class="container">
@@ -375,8 +267,8 @@ get_header();
             <h2 class="props__secondary-title">Реквизиты</h2>
             <p class="text">Помогите детям, перечислив деньги на счет Благотворительного  Фонда “Благородный”</p>
             <p class="text">
-              <span class="text-bold">Приват:</span>
-              <a class="text-to-copy">5453-4325-6463-5435</a>
+              <span class="text-bold">Приват (UAH):</span>
+              <a class="text-to-copy">5169-3305-2003-6481</a>
             </p>
 
             <p class="text">
@@ -393,11 +285,6 @@ get_header();
               <span class="text-bold">Лайткоин: </span>
               <a class="text-to-copy"> MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV</a>
             </p>
-
-            <p class="text">
-              <span class="text-bold">Эфир:</span>
-              <a class="text-to-copy"> 3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk</a>
-            </p>
           </div>
         </div>
       </div>
@@ -411,10 +298,11 @@ get_header();
           <div class="contacts__contact-box">
             <div class="contacts__container">
               <h2 class="contacts__title">Контакты</h2>
-              <a href="#" class="contacts__link contacts__link--address">20014, г. Екатеринбург, ул. 8 Марта, 13</a>
-              <a href="#" class="contacts__link">13 Тел./факс: (343) 216-35-32</a>
-              <a href="tel:+7-922-1150-777" class="contacts__link"><span class="text-bold">Моб:</span>+7-922-1150-777</a>
-              <a href="mailto:fond-vmeste@list.ru" class="contacts__link"><span class="text-bold">E-mail:</span>fond-vmeste@list.ru</a>
+              <a href="#" class="contacts__link contacts__link--address">Запорожье, ул. Курузова 11, офис 112</a>
+              <a href="tel:+380990800538" class="contacts__link"><span class="text-bold">Моб:</span> +38 (099) 080-05-38</a>
+              <a href="mailto:fond-vmeste@list.ru" class="contacts__link">
+                <span class="text-bold">E-mail:</span> fond-vmeste@list.ru
+              </a>
             </div>
           </div>
         </div>

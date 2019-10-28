@@ -161,17 +161,17 @@ function mst_blag_scripts() {
     'mainState',
     [
       'googleMaps' => [
-        'apiKey' => 'AIzaSyDPczI6-xWGiq4zm9NjG6PWNs33cvLFA54',
+        'apiKey' => 'AIzaSyBT_6eW4qC6HMJ1giaMBrMkhyOH4JzpWlk',
         'zoom' => 16,
         'mapCenter' => [
-          'latitude' => '56.836502',
-          'longitude' => '60.600357',
+          'latitude' => '47.830920',
+          'longitude' => '35.021362',
         ],
         'markers' => [
           [
             'icon' => get_template_directory_uri() . '/assets/images/icons/location.png',
-            'latitude' => '56.836502',
-            'longitude' => '60.600357',
+            'latitude' => '47.830920',
+            'longitude' => '35.021362',
           ],
         ],
       ],

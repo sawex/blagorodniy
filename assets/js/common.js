@@ -1,6 +1,7 @@
 /* global jQuery, google, mainState */
 const Main = function () {
   // Header
+  this.header = document.querySelector('.header');
   this.hambButton = document.querySelector('.hamburger');
   this.mobileMenu = document.querySelector('.header__mob-open-menu');
 
@@ -15,6 +16,19 @@ const Main = function () {
   this.overlay = document.querySelector('.overlay');
   this.reportsViewer = document.querySelector('.popup--reports-viewer');
 };
+
+Main.prototype.initStickyHeader = function() {
+  if (!this.header) return;
+
+  jQuery(window).scroll(() => {
+    if (jQuery(window).scrollTop() >= 10) {
+      this.header.classList.add('header__scrolling');
+    } else {
+      this.header.classList.remove('header__scrolling');
+    }
+  });
+};
+
 
 Main.prototype.initHamburgerMenu = function() {
   this.hambButton.addEventListener('click', () => {
@@ -205,11 +219,15 @@ Main.prototype.initReportsSlider = function() {
     responsive: [
       {
         breakpoint: 992,
-        slidesToShow: 2,
+        settings: {
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 540,
-        slidesToShow: 1,
+        settings: {
+          slidesToShow: 1,
+        },
       },
     ],
     ...options,
@@ -220,25 +238,33 @@ Main.prototype.initReportsSlider = function() {
     responsive: [
       {
         breakpoint: 992,
-        slidesToShow: 3,
+        settings: {
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 540,
-        slidesToShow: 2,
+        settings: {
+          slidesToShow: 2,
+        },
       },
     ],
     ...options,
   });
 
-  prevBtn.addEventListener('click', () => {
-    jQuery('.reports__gallery-row--top').slick('slickPrev');
-    jQuery('.reports__gallery-row--bottom').slick('slickPrev');
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      jQuery('.reports__gallery-row--top').slick('slickPrev');
+      jQuery('.reports__gallery-row--bottom').slick('slickPrev');
+    });
+  }
 
-  nextBtn.addEventListener('click', () => {
-    jQuery('.reports__gallery-row--top').slick('slickNext');
-    jQuery('.reports__gallery-row--bottom').slick('slickNext');
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      jQuery('.reports__gallery-row--top').slick('slickNext');
+      jQuery('.reports__gallery-row--bottom').slick('slickNext');
+    });
+  }
 
   document.addEventListener('click', (e) => {
     const el = e.target;
@@ -310,12 +336,13 @@ Main.prototype.initMap = function() {
 };
 
 Main.prototype.init = function () {
+  this.initStickyHeader();
   this.initHamburgerMenu();
   this.scrollSpy();
   this.smoothAnchors();
   this.initClipboardSaver();
   this.initActivitiesSlider();
-  this.initReportsSlider();
+  // this.initReportsSlider();
   this.initMap();
 };
 
