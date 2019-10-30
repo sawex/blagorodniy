@@ -34,7 +34,3 @@
     </div>
   </div>
 </div>
-
-<div class="clipboard-tooltip">
-  Нажмите, чтобы скопировать в буфер обмена
-</div>

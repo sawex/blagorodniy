@@ -8,7 +8,7 @@
  */
 
 if ( ! defined( 'MST_BLAG_VER' ) ) {
-  define( 'MST_BLAG_VER', '1.0.0' );
+  define( 'MST_BLAG_VER', '1.0.2' );
 }
 
 if ( ! function_exists( 'mst_blag_setup' ) ) :
@@ -149,6 +149,14 @@ function mst_blag_scripts() {
   );
 
 	wp_enqueue_script(
+	  'mst_blag-gumshoe-js',
+    get_template_directory_uri() . '/assets/js/gumshoe.min.js',
+    [],
+    MST_BLAG_VER,
+    true
+  );
+
+	wp_enqueue_script(
 	  'mst_blag-common',
     get_template_directory_uri() . '/assets/js/common.js',
     [],
@@ -161,11 +169,11 @@ function mst_blag_scripts() {
     'mainState',
     [
       'googleMaps' => [
-        'apiKey' => 'AIzaSyBT_6eW4qC6HMJ1giaMBrMkhyOH4JzpWlk',
+        'apiKey' => ST_GOOGLE_API_KEY,
         'zoom' => 16,
         'mapCenter' => [
-          'latitude' => '47.830920',
-          'longitude' => '35.021362',
+          'latitude' => '47.831300',
+          'longitude' => '35.017414',
         ],
         'markers' => [
           [

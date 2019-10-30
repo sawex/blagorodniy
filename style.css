@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pavlo Knyazevich
 Author URI: https://github.com/Knyazevich
 Description: Custom theme: Blagorodnyi, developed by Pavlo Knyazevich
-Version: 1.0.0
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: mst_blag
@@ -113,7 +113,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .header {
-  position: sticky;
   top: 0;
   z-index: 1;
   min-height: 160px;
@@ -171,6 +170,64 @@ h5 {font-size: 16px; letter-spacing: normal;}
   display: flex;
 }
 
+.header__contacts-list {
+  flex-direction: column;
+  transition: 300ms ease-out;
+}
+
+.header__scrolling .header__nav .header__contacts-list {
+  height: 38px;
+  overflow: hidden;
+  transition: 300ms ease-in;
+}
+
+.header__scrolling .header__nav .header__contacts-list--collapsed {
+  height: 98px;
+  transition: 300ms ease-out;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header__contacts-toggle-btn {
+  display: none;
+}
+
+.header__scrolling .header__contacts-toggle-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-image: url('./assets/images/icons/arrow-down.svg');
+  background-color: transparent;
+  border: none;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.header__scrolling .header__contacts-toggle-btn--arrow-up {
+  background-image: url('./assets/images/icons/arrow-up.svg');
+}
+
+.header__contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__contact-item:first-child {
+  margin-bottom: 20px;
+}
+
+.header__contact-desc {
+  text-transform: lowercase;
+  margin-left: 37px;
+}
+
 .header__nav-list-item:not(:last-child) {
   margin-right: 32px;
 }
@@ -204,7 +261,8 @@ h5 {font-size: 16px; letter-spacing: normal;}
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 50%;
+  /*top: 50%;*/
+  top: 100%;
   left: -35px;
   transform: translateY(-50%);
   background: transparent url(assets/images/icons/phone-call@2x.svg) center no-repeat;
@@ -281,11 +339,12 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .props__props-info {
   width: 380px;
-  /*height: 428px;*/
-  height: auto;
+  height: 428px;
+  /*height: auto;*/
   border: 1px dotted #B8B8B8;
   /*border-left: none;*/
   padding: 40px 35px;
+  overflow-y: scroll;
 }
 
 .props__secondary-title {
@@ -294,6 +353,16 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .text-bold {
   font-weight: 600;
+}
+
+.text--semititle {
+  margin-top: 30px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.text--qr {
+  text-align: center;
 }
 
 .objectives {
@@ -426,12 +495,12 @@ h5 {font-size: 16px; letter-spacing: normal;}
 } 
 
 .activities {
-  min-height: 1025px;
+  min-height: 825px;
   background-image: url(assets/images/activ-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -508,9 +577,11 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .result {
-  padding-top: 170px;
+  padding-top: 70px;
   position: relative;
+  padding-bottom: 30px;
 }
+
 .result::before {
   content: '';
   background-image: url(assets/images/icons/cloud.svg);
@@ -729,10 +800,14 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .reports__gallery-nav-btn--prev {
   background-image: url(assets/images/icons/prev.svg);
+  position: relative;
+  left: 10px;
 }
 
 .reports__gallery-nav-btn--next {
   background-image: url(assets/images/icons/next.svg);
+  position: relative;
+  right: 10px;
 }
 
 .reports__gallery-nav-btn--next:hover {
@@ -756,7 +831,8 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .help {
   border-bottom: 12px solid #198D37;
   position: relative;
-  overflow-x: hidden
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 
 .help::before {
@@ -859,8 +935,8 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .contacts {
   position: relative;
-  min-height: 500px;
-  /*background-image: url(assets/images/map.png);*/
+  /*min-height: 500px;*/
+  height: 500px;
 }
 
 .contacts__contact-box {
@@ -907,6 +983,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .contacts__map {
   width: 100%;
   min-height: 500px;
+  border-bottom: 1px dotted #b8b8b8;
 }
 
 .footer__copy {
@@ -1186,16 +1263,17 @@ h5 {font-size: 16px; letter-spacing: normal;}
     height: 66px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: ease-in-out .3s;
+    position: fixed;
   }
 
   .header__scrolling .logo {
     transform: scale(0.46);
     transition: ease-in-out .3s;
-  } 
+  }
 }
 
 @media screen and (min-width: 769px) {
-  .header__nav-link.header__nav-link--active::before {
+  .header__nav-list-item.header__nav-list-item--active .header__nav-link::before {
     content: '';
     background-image: url(assets/images/icons/cloud.svg);
     width: 88px;
@@ -1405,6 +1483,9 @@ h5 {font-size: 16px; letter-spacing: normal;}
     justify-content: space-between;
     position: relative;
     padding: 0 1.5em;
+    margin-top: 10px;
+    border-top: 1px dotted #b8b8b8;
+    border-bottom: 1px dotted #b8b8b8;
   }
 
   .header__nav-list {
@@ -1436,6 +1517,8 @@ h5 {font-size: 16px; letter-spacing: normal;}
     position: static;
     padding-left: 34px;
     margin-top: 45px;
+    display: flex;
+    flex-direction: column;
   }
 
   .header__mob-open-menu {
@@ -1447,6 +1530,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   .header__mob-open-menu--is-active {
     transition: ease-in-out .3s;
     transform: scaleY(1);
+    border-bottom: 1px dotted #b8b8b8;
   }
 
   .props__props-info {
@@ -1562,6 +1646,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
     margin: 0 auto;
     color: #fff;
     border: 1px dotted #B8B8B8 !important;
+    overflow: hidden;
   }
 
   .contacts__contact-box {
@@ -1600,7 +1685,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 @media screen and (max-width: 600px) {
   .admin-bar .header,
   .header {
-    top: 0px;
+    top: 0;
   }
 }
 

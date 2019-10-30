@@ -15,6 +15,10 @@
   <p class="footer__copy">БФ “Благородный” © 2019, все права защищены</p>
 </footer>
 
+<div class="clipboard-tooltip">
+  Нажмите, чтобы скопировать в буфер обмена
+</div>
+
 <?php wp_footer(); ?>
 
 </body>

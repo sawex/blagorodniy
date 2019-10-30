@@ -11,17 +11,17 @@ const Main = function () {
   this.zoom = mainState.googleMaps.zoom;
   this.mapCenter = mainState.googleMaps.mapCenter;
   this.markers = mainState.googleMaps.markers;
-
-  // Popups
-  this.overlay = document.querySelector('.overlay');
-  this.reportsViewer = document.querySelector('.popup--reports-viewer');
 };
 
 Main.prototype.initStickyHeader = function() {
   if (!this.header) return;
 
+  if (jQuery(window).scrollTop() >= 20) {
+    this.header.classList.add('header__scrolling');
+  }
+
   jQuery(window).scroll(() => {
-    if (jQuery(window).scrollTop() >= 10) {
+    if (jQuery(window).scrollTop() >= 20) {
       this.header.classList.add('header__scrolling');
     } else {
       this.header.classList.remove('header__scrolling');
@@ -44,36 +44,8 @@ Main.prototype.initHamburgerMenu = function() {
  * @package Maximumstart
  */
 Main.prototype.scrollSpy = function() {
-  window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section[data-scrollspy-id]');
-    const sectionsOffsets = {};
-
-    sections.forEach((section) => {
-      sectionsOffsets[section.dataset.scrollspyId] = section.offsetTop;
-    });
-
-    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-    for (const section in sectionsOffsets) {
-      let currentSection = '';
-
-      if (sectionsOffsets.hasOwnProperty(section) && sectionsOffsets[section] <= scrollPosition + 80) {
-        currentSection = section;
-      }
-
-      if (currentSection) {
-        const currentActiveEl = document.querySelector('.header__nav .header__nav-link--active');
-        const newActiveEl = document.querySelector(`.header__nav .header__nav-link[href*=${currentSection}]`);
-
-        if (currentActiveEl) {
-          currentActiveEl.classList.remove('header__nav-link--active');
-        }
-
-        if (newActiveEl) {
-          newActiveEl.classList.add('header__nav-link--active');
-        }
-      }
-    }
+  new Gumshoe('.header__nav-list .header__nav-link', {
+    navClass: 'header__nav-list-item--active',
   });
 };
 
@@ -106,6 +78,23 @@ Main.prototype.smoothAnchors = function() {
         location = url.href;
       }
     });
+  });
+};
+
+Main.prototype.initContactsCollapseButton = function() {
+  document.querySelector('.header__contacts-toggle-btn').addEventListener('click', () => {
+    document.querySelector('.header__contacts-list').classList.toggle('header__contacts-list--collapsed');
+    document.querySelector('.header__contacts-toggle-btn').classList.toggle('header__contacts-toggle-btn--arrow-up');
+
+    const stickyHeader = document.querySelector('.header__scrolling');
+
+    if (!stickyHeader) return;
+
+    if (!stickyHeader.style.minHeight || stickyHeader.style.minHeight === '66px') {
+      stickyHeader.style.minHeight = '160px';
+    } else {
+      stickyHeader.style.minHeight = '66px';
+    }
   });
 };
 
@@ -183,8 +172,8 @@ Main.prototype.initActivitiesSlider = function() {
       {
         breakpoint: 992,
         settings: {
-          prevArrow: jQuery('.reports__gallery-nav-btn--prev'),
-          nextArrow: jQuery('.reports__gallery-nav-btn--next'),
+          prevArrow: jQuery('.activities .reports__gallery-nav-btn--prev'),
+          nextArrow: jQuery('.activities .reports__gallery-nav-btn--next'),
           dots: false,
           autoplay: true,
           autoplaySpeed: 5000,
@@ -193,11 +182,9 @@ Main.prototype.initActivitiesSlider = function() {
     ]
   });
 
-  window.addEventListener('resize', () => {
-    if (window.matchMedia('(max-width: 992px)').matches) {
-      jQuery('.activities__wrapper--mobile').slick('refresh')
-    }
-  });
+  // window.addEventListener('resize', () => {
+  //   jQuery('.activities__wrapper--mobile').slick('refresh')
+  // });
 };
 
 Main.prototype.initReportsSlider = function() {
@@ -265,27 +252,6 @@ Main.prototype.initReportsSlider = function() {
       jQuery('.reports__gallery-row--bottom').slick('slickNext');
     });
   }
-
-  document.addEventListener('click', (e) => {
-    const el = e.target;
-
-    if (el.classList.contains('reports__gallery-img-box') || el.classList.contains('reports__gallery-img')) {
-      this.overlay.classList.add('popup__active');
-      this.reportsViewer.classList.add('popup__active');
-    }
-  });
-
-  this.overlay.addEventListener('click', () => {
-    this.overlay.classList.remove('popup__active');
-    this.reportsViewer.classList.remove('popup__active');
-  });
-
-  if (document.querySelector('.popup__close-btn')) {
-    document.querySelector('.popup__close-btn').addEventListener('click', () => {
-      this.overlay.classList.remove('popup__active');
-      this.reportsViewer.classList.remove('popup__active');
-    });
-  }
 };
 
 /**
@@ -340,6 +306,7 @@ Main.prototype.init = function () {
   this.initHamburgerMenu();
   this.scrollSpy();
   this.smoothAnchors();
+  this.initContactsCollapseButton();
   this.initClipboardSaver();
   this.initActivitiesSlider();
   // this.initReportsSlider();

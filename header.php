@@ -46,11 +46,22 @@
               <a href="#contacts" class="header__nav-link">Контакты</a>
             </li>
           </ul>
-          <ul class="header__contacts-list">
-            <li class="header__contact-item">
-              <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
-            </li>
-          </ul>
+
+          <div class="contact-wrapper">
+            <ul class="header__contacts-list">
+              <li class="header__contact-item">
+                <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
+                <span class="header__contact-desc">Директор</span>
+              </li>
+
+              <li class="header__contact-item">
+                <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
+                <span class="header__contact-desc">Менеджер</span>
+              </li>
+            </ul>
+            <button class="header__contacts-toggle-btn" aria-label="Показать все телефоны"></button>
+          </div>
+
         </nav>
         <nav class="header__mobile-nav">
           <div class="header__mobile-row">
@@ -106,6 +117,12 @@
               <ul class="header__contacts-list">
                 <li class="header__contact-item">
                   <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
+                  <span class="header__contact-desc">Директор</span>
+                </li>
+
+                <li class="header__contact-item">
+                  <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
+                  <span class="header__contact-desc">Менеджер</span>
                 </li>
               </ul>
             </div>

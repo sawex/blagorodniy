@@ -17,7 +17,7 @@ get_header();
             </div>
             <div class="props__props-info">
               <h2 class="props__secondary-title">Реквизиты</h2>
-              <p class="text">Помогите детям, перечислив деньги  на счет Благотворительного  Фонда “Благородный”</p>
+              <p class="text">Помогите детям, перечислив деньги на счет Благотворительного Фонда “Благородный”</p>
               <p class="text">
                 <span class="text-bold">Приват (UAH):</span>
                 <a class="text-to-copy"
@@ -43,11 +43,44 @@ get_header();
               </p>
 
               <p class="text">
-                <span class="text-bold">Лайткоин: </span>
+                <span class="text-bold">Лайткоин:</span>
                 <a class="text-to-copy"
                    data-clipboard-text="MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV">
                   MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV
                 </a>
+              </p>
+
+              <p class="text text--semititle">
+                <span class="text-bold">Платежи по реквизитам</span>
+              </p>
+
+              <p class="text" style="margin-top: 0;">
+                <span class="text-bold">Наименование получателя</span><br>
+                <a class="text-to-copy">БО БФ БЛАГОРОДНИЙ БО</a><br>
+
+                <span class="text-bold">Код получателя</span><br>
+                <a class="text-to-copy">43232411</a><br>
+
+                <span class="text-bold">Счет получателя</span><br>
+                <a class="text-to-copy">26001055752253</a><br>
+
+                <span class="text-bold">Счет в формате согласно стандарту IBAN</span><br>
+                <a class="text-to-copy">UA093133990000026001055752253</a><br>
+
+                <span class="text-bold">Название Банка</span><br>
+                <a class="text-to-copy">ЗАПОРIЗЬКЕ РУ АТ КБ "ПРИВАТБАНК"</a><br>
+
+                <span class="text-bold">Код Банка (МФО)</span><br>
+                <a class="text-to-copy">313399</a>
+              </p>
+
+              <p class="text text--semititle">
+                <span class="text-bold">Приват 24</span>
+              </p>
+
+              <p class="text text--qr">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/QR.png"
+                     alt="Privatbank QR">
               </p>
             </div>
           </div>
@@ -70,11 +103,11 @@ get_header();
                 <ol class="objectives__tasks-list">
                   <li class="objectives__tasks-list-item">Реализация программ, способствующих росту количества детей, выздоравливающих после перенесения тяжелых заболеваний.</li>
                   <li class="objectives__tasks-list-item">Организация кампании по привлечению добровольных пожертвований российских и зарубежных юридических и физических лиц для реализации благотворительных программ фонда.</li>
-                  <li class="objectives__tasks-list-item">Формирование благоприятного правового, социального  и информационного поля вокруг семей, имеющих тяжелобольных детей.</li>
-                  <li class="objectives__tasks-list-item">Улучшение имиджа бизнес структур, оказывающих благотворительную помощь.</li>
-                  <li class="objectives__tasks-list-item">Участие в городских и федеральных программах по поддержке детских больниц.</li>
+                  <li class="objectives__tasks-list-item">Формирование благоприятного правового, социального и информационного поля вокруг семей, имеющих тяжелобольных детей.</li>
+                  <li class="objectives__tasks-list-item">Улучшение имиджа бизнес структур, оказывающих благотворительную помощь.</li>
+                  <li class="objectives__tasks-list-item">Участие в городских и федеральных программах по поддержкедетских больниц.</li>
                   <li class="objectives__tasks-list-item">Содействие движению доноров крови.</li>
-                  <li class="objectives__tasks-list-item">Формирование информационного банка данных нуждающихся и благотворителей.</li>
+                  <li class="objectives__tasks-list-item">Формирование информационного банка данных нуждающихся и благотворителей.</li>
                 </ol>
               </div>
             </div>
@@ -195,7 +228,7 @@ get_header();
             <button class="reports__gallery-nav-btn reports__gallery-nav-btn--next"></button>
           </nav>
 
-          <p class="text microtext activities__desc">Основные источники финансирования деятельности фонда – частные финансовые пожертвования, привлечение  целевых средств от крупных коммерческих структур, сбор средств путем проведения благотворительных мероприятий.</p>
+          <p class="text microtext activities__desc">Основные источники финансирования деятельности фонда – частные финансовые пожертвования, привлечение целевых средств от крупных коммерческих структур, сбор средств путем проведения благотворительных мероприятий.</p>
         </div>
       </div>
     </section>
@@ -212,7 +245,7 @@ get_header();
                 <li class="result__list-item">Привлечение СМИ к освещению эффективных путей решения серьезной проблемы тяжелых заболеваний.</li>
                 <li class="result__list-item">Развитие корпоративной благотворительности в российских компаниях.</li>
               </ol>
-              <p class="secondary-text">Партнеры программ и акций фонда – физические и юридические лица Екатеринбурга  и Свердловской области, России. стран СНГ и зарубежья, заключившие  с некоммерческой организацией Детский благотворительный фонд "Мы вместе" договоры о реализации благотворительных мероприятий.</p>
+              <p class="secondary-text">Партнеры программ и акций фонда – физические и юридические лица Екатеринбурга и Свердловской области, России. стран СНГ и зарубежья, заключившие с некоммерческой организацией Детский благотворительный фонд "Мы вместе" договоры о реализации благотворительных мероприятий.</p>
             </div>
             <div class="result__img-box">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/two-girl.png" alt="two girls" class="result__img">
@@ -265,7 +298,7 @@ get_header();
         <div class="row">
           <div class="props__props-info">
             <h2 class="props__secondary-title">Реквизиты</h2>
-            <p class="text">Помогите детям, перечислив деньги на счет Благотворительного  Фонда “Благородный”</p>
+            <p class="text">Помогите детям, перечислив деньгина счет Благотворительного Фонда “Благородный”</p>
             <p class="text">
               <span class="text-bold">Приват (UAH):</span>
               <a class="text-to-copy">5169-3305-2003-6481</a>
@@ -278,13 +311,47 @@ get_header();
 
             <p class="text">
               <span class="text-bold">Биткоин:</span>
-              <a class="text-to-copy"> 3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk</a>
+              <a class="text-to-copy">3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk</a>
             </p>
 
             <p class="text">
-              <span class="text-bold">Лайткоин: </span>
-              <a class="text-to-copy"> MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV</a>
+              <span class="text-bold">Лайткоин:</span>
+              <a class="text-to-copy">MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV</a>
             </p>
+
+            <p class="text text--semititle">
+              <span class="text-bold">Платежи по реквизитам</span>
+            </p>
+
+            <p class="text" style="margin-top: 0;">
+              <span class="text-bold">Наименование получателя</span><br>
+              <a class="text-to-copy">БО БФ БЛАГОРОДНИЙ БО</a><br>
+
+              <span class="text-bold">Код получателя</span><br>
+              <a class="text-to-copy">43232411</a><br>
+
+              <span class="text-bold">Счет получателя</span><br>
+              <a class="text-to-copy">26001055752253</a><br>
+
+              <span class="text-bold">Счет в формате согласно стандарту IBAN</span><br>
+              <a class="text-to-copy">UA093133990000026001055752253</a><br>
+
+              <span class="text-bold">Название Банка</span><br>
+              <a class="text-to-copy">ЗАПОРIЗЬКЕ РУ АТ КБ "ПРИВАТБАНК"</a><br>
+
+              <span class="text-bold">Код Банка (МФО)</span><br>
+              <a class="text-to-copy">313399</a>
+            </p>
+
+<!--            <p class="text text--semititle">-->
+<!--              <span class="text-bold">Приват 24</span>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text text--qr">-->
+<!--              <img src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/QR.png"-->
+<!--                   alt="Privatbank QR">-->
+<!--            </p>-->
+
           </div>
         </div>
       </div>
@@ -298,10 +365,15 @@ get_header();
           <div class="contacts__contact-box">
             <div class="contacts__container">
               <h2 class="contacts__title">Контакты</h2>
-              <a href="#" class="contacts__link contacts__link--address">Запорожье, ул. Курузова 11, офис 112</a>
-              <a href="tel:+380990800538" class="contacts__link"><span class="text-bold">Моб:</span> +38 (099) 080-05-38</a>
-              <a href="mailto:fond-vmeste@list.ru" class="contacts__link">
-                <span class="text-bold">E-mail:</span> fond-vmeste@list.ru
+              <span class="contacts__link contacts__link--address">Запорожье, ул. Курузова 11, офис 112</span>
+              <a href="tel:+380990800538" class="contacts__link">
+                <span class="text-bold">Директор:</span> +38 (099) 080-05-38
+              </a>
+              <a href="tel:+380990800558" class="contacts__link">
+                <span class="text-bold">Менеджер:</span> +38 (099) 080-05-58
+              </a>
+              <a href="mailto:blagorod.zp@gmail.com" class="contacts__link">
+                <span class="text-bold">E-mail:</span> blagorod.zp@gmail.com
               </a>
             </div>
           </div>
