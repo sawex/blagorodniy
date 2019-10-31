@@ -50,12 +50,12 @@
           <div class="contact-wrapper">
             <ul class="header__contacts-list">
               <li class="header__contact-item">
-                <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
+                <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
                 <span class="header__contact-desc">Директор</span>
               </li>
 
               <li class="header__contact-item">
-                <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
+                <a href="tel:+380990900558" class="header__contact-link">+38 (099) 090-05-58</a>
                 <span class="header__contact-desc">Менеджер</span>
               </li>
             </ul>
@@ -116,12 +116,12 @@
 
               <ul class="header__contacts-list">
                 <li class="header__contact-item">
-                  <a href="tel:+380990800538" class="header__contact-link">+38 (099) 080-05-38</a>
+                  <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
                   <span class="header__contact-desc">Директор</span>
                 </li>
 
                 <li class="header__contact-item">
-                  <a href="tel:+380990800558" class="header__contact-link">+38 (099) 080-05-58</a>
+                  <a href="tel:+380990900558" class="header__contact-link">+38 (099) 090-05-58</a>
                   <span class="header__contact-desc">Менеджер</span>
                 </li>
               </ul>

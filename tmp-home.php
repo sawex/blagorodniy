@@ -17,7 +17,17 @@ get_header();
             </div>
             <div class="props__props-info">
               <h2 class="props__secondary-title">Реквизиты</h2>
-              <p class="text">Помогите детям, перечислив деньги на счет Благотворительного Фонда “Благородный”</p>
+              <p class="text">Сбор средств на строительство церкви в Запорожье:</p>
+
+              <p class="text text--semititle">
+                <span class="text-bold">Приват 24</span>
+              </p>
+
+              <p class="text text--qr">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/QR.png"
+                     alt="Privatbank QR">
+              </p>
+
               <p class="text">
                 <span class="text-bold">Приват (UAH):</span>
                 <a class="text-to-copy"
@@ -73,22 +83,13 @@ get_header();
                 <span class="text-bold">Код Банка (МФО)</span><br>
                 <a class="text-to-copy">313399</a>
               </p>
-
-              <p class="text text--semititle">
-                <span class="text-bold">Приват 24</span>
-              </p>
-
-              <p class="text text--qr">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/QR.png"
-                     alt="Privatbank QR">
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="objectives" id="objectives" data-scrollspy-id="objectives">
+    <section class="objectives" id="objectives">
       <div class="container">
         <div class="row">
           <h2 class="objectives__title">Цели и задачи фонда</h2>
@@ -123,7 +124,7 @@ get_header();
       <div class="objectives__bg-cloud-2"></div>
     </section>
 
-    <section class="activities" id="activities" data-scrollspy-id="activities">
+    <section class="activities" id="activities">
       <div class="container">
         <div class="row">
           <h2 class="activities__title">Основные виды деятельности</h2>
@@ -233,7 +234,7 @@ get_header();
       </div>
     </section>
 
-    <section class="result" id="result" data-scrollspy-id="result">
+    <section class="result" id="result">
       <div class="container">
         <div class="row">
           <h2 class="result__title">Ожидаемые результаты деятельности фонда</h2>
@@ -257,7 +258,7 @@ get_header();
 
     <!-- Reports was here -->
 
-    <section class="help" id="help" data-scrollspy-id="help">
+    <section class="help" id="help">
       <div class="container">
         <div class="row">
           <div class="help__wrapper">
@@ -298,7 +299,7 @@ get_header();
         <div class="row">
           <div class="props__props-info">
             <h2 class="props__secondary-title">Реквизиты</h2>
-            <p class="text">Помогите детям, перечислив деньгина счет Благотворительного Фонда “Благородный”</p>
+            <p class="text">Сбор средств на строительство церкви в Запорожье:</p>
             <p class="text">
               <span class="text-bold">Приват (UAH):</span>
               <a class="text-to-copy">5169-3305-2003-6481</a>
@@ -342,22 +343,12 @@ get_header();
               <span class="text-bold">Код Банка (МФО)</span><br>
               <a class="text-to-copy">313399</a>
             </p>
-
-<!--            <p class="text text--semititle">-->
-<!--              <span class="text-bold">Приват 24</span>-->
-<!--            </p>-->
-<!---->
-<!--            <p class="text text--qr">-->
-<!--              <img src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/QR.png"-->
-<!--                   alt="Privatbank QR">-->
-<!--            </p>-->
-
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contacts" id="contacts" data-scrollspy-id="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__map"></div>
 
       <div class="container">
@@ -366,11 +357,11 @@ get_header();
             <div class="contacts__container">
               <h2 class="contacts__title">Контакты</h2>
               <span class="contacts__link contacts__link--address">Запорожье, ул. Курузова 11, офис 112</span>
-              <a href="tel:+380990800538" class="contacts__link">
-                <span class="text-bold">Директор:</span> +38 (099) 080-05-38
-              </a>
               <a href="tel:+380990800558" class="contacts__link">
-                <span class="text-bold">Менеджер:</span> +38 (099) 080-05-58
+                <span class="text-bold">Директор:</span> +38 (099) 080-05-58
+              </a>
+              <a href="tel:+380990900558" class="contacts__link">
+                <span class="text-bold">Менеджер:</span> +38 (099) 090-05-58
               </a>
               <a href="mailto:blagorod.zp@gmail.com" class="contacts__link">
                 <span class="text-bold">E-mail:</span> blagorod.zp@gmail.com
