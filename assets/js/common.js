@@ -44,7 +44,7 @@ Main.prototype.initHamburgerMenu = function() {
  * @package Maximumstart
  */
 Main.prototype.scrollSpy = function() {
-  new Gumshoe('.header__nav-list .header__nav-link', {
+  new Gumshoe('.header__nav .header__nav-list .header__nav-link', {
     navClass: 'header__nav-list-item--active',
   });
 };
