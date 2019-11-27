@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pavlo Knyazevich
 Author URI: https://github.com/Knyazevich
 Description: Custom theme: Blagorodnyi, developed by Pavlo Knyazevich
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: mst_blag
@@ -316,7 +316,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   width: 760px;
   /*height: 428px;*/
   height: auto;
-  background-image: url(assets/images/banner-img-2.png);
+  background-image: url(assets/images/church.jpg);
   -webkit-background-size: contain;
   background-size: contain;
   background-position: center;
@@ -343,7 +343,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   /*height: auto;*/
   border: 1px dotted #B8B8B8;
   /*border-left: none;*/
-  padding: 40px 35px;
+  padding: 0 35px;
   overflow-y: scroll;
 }
 
@@ -381,6 +381,11 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .text--qr {
   text-align: center;
 }
+
+.text--qr img {
+  width: 115px;
+}
+
 
 .objectives {
   padding-top: 90px;
@@ -478,7 +483,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives__text-box {
   margin-top: 50px;
-  width: 670px;
+  /*width: 670px;*/
 }
 
 .objectives__tasks:not(:first-child) {
@@ -545,15 +550,12 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .activities__service {
-  width: 25%;
+  width: 32%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
@@ -562,14 +564,15 @@ h5 {font-size: 16px; letter-spacing: normal;}
   text-align: center;
   font-weight: 500;
   margin-bottom: 90px;
+  justify-content: space-between;
 }
 
-.activities__service:nth-last-child(1), 
-.activities__service:nth-last-child(2),
-.activities__service:nth-last-child(3) {
-  width: 31%;
-  margin-bottom: 0;
-}
+/*.activities__service:nth-last-child(1), */
+/*.activities__service:nth-last-child(2),*/
+/*.activities__service:nth-last-child(3) {*/
+  /*width: 31%;*/
+  /*margin-bottom: 0;*/
+/*}*/
 
 .activities__desc {
   margin: 0 auto;
@@ -664,6 +667,11 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .result__wrapper .secondary-text {
   opacity: 0.8;
+}
+
+.result__img {
+  position: relative;
+  top: -50px;
 }
 
 .reports {
@@ -932,9 +940,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .help__list {
-  padding-left: 17px;
+  padding-left: 0;
   line-height: 22px;
   margin-top: 0;
+  list-style-type: none;
 }
 
 .requisites-mobile {
@@ -948,6 +957,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.help__qr {
+  text-align: left;
 }
 
 .contacts {
@@ -1272,6 +1285,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .clipboard-tooltip--active {
   background: #F3A253;
   border: 1px dashed #fff;
+}
+
+.scheme__image {
+  width: 100%;
 }
 
 @media screen and (min-width: 1201px) {

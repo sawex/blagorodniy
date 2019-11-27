@@ -31,7 +31,7 @@
               <a href="#objectives" class="header__nav-link">Цели и задачи</a>
             </li>
             <li class="header__nav-list-item">
-              <a href="#activities" class="header__nav-link">Виды деятельности</a>
+              <a href="#activities" class="header__nav-link">Планы</a>
             </li>
             <li class="header__nav-list-item">
               <a href="#result" class="header__nav-link">Результаты</a>
@@ -98,7 +98,7 @@
                   <a href="#objectives" class="header__nav-link">Цели и задачи</a>
                 </li>
                 <li class="header__nav-list-item">
-                  <a href="#activities" class="header__nav-link">Виды деятельности</a>
+                  <a href="#activities" class="header__nav-link">Планы</a>
                 </li>
                 <li class="header__nav-list-item">
                   <a href="#result" class="header__nav-link">Результаты</a>
