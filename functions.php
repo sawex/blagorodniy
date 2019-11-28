@@ -8,7 +8,7 @@
  */
 
 if ( ! defined( 'MST_BLAG_VER' ) ) {
-  define( 'MST_BLAG_VER', '1.0.4' );
+  define( 'MST_BLAG_VER', '1.0.5' );
 }
 
 if ( ! function_exists( 'mst_blag_setup' ) ) :

@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pavlo Knyazevich
 Author URI: https://github.com/Knyazevich
 Description: Custom theme: Blagorodnyi, developed by Pavlo Knyazevich
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: mst_blag
@@ -533,6 +533,14 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .activities__title {
   width: 100%;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.activities__subtitle {
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .activities__wrapper {
@@ -1630,6 +1638,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
     overflow-x: hidden;
   }
 
+  .result__title::before {
+    height: 0;
+  }
+
   .result__wrapper {
     flex-wrap: wrap;
     align-items: center;
@@ -1669,7 +1681,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   }
 
   .requisites-mobile {
-    display: block;
+    /*display: block;*/
     min-height: 377px;
     background-color: #198D37;
     padding-bottom: 14px;

@@ -154,8 +154,10 @@ get_header();
       <div class="container">
         <div class="row">
           <h2 class="activities__title">
-            После строительства двух Храмов в Запорожье, благотворительный фонд Благородный планирует:
+            Наши планы
           </h2>
+
+          <p class="text activities__subtitle">После строительства двух Храмов в Запорожье, благотворительный фонд Благородный планирует:</p>
 
           <div class="activities__wrapper">
             <div class="activities__service">
@@ -361,59 +363,59 @@ get_header();
       <div class="help__cloud-bg"></div>
     </section>
 
-    <section class="requisites-mobile" id="requisites">
-      <div class="container">
-        <div class="row">
-          <div class="props__props-info">
-            <h2 class="props__secondary-title">Реквизиты</h2>
-            <p class="text">Сбор средств на строительство церкви в Запорожье:</p>
-            <p class="text">
-              <span class="text-bold">Приват (UAH):</span>
-              <a class="text-to-copy">5169-3305-2003-6481</a>
-            </p>
-
-            <p class="text">
-              <span class="text-bold">Приват (USD):</span>
-              <a class="text-to-copy">UA683133990000026002055754164</a>
-            </p>
-
-            <p class="text">
-              <span class="text-bold">Биткоин:</span>
-              <a class="text-to-copy">3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk</a>
-            </p>
-
-            <p class="text">
-              <span class="text-bold">Лайткоин:</span>
-              <a class="text-to-copy">MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV</a>
-            </p>
-
-            <p class="text text--semititle">
-              <span class="text-bold">Платежи по реквизитам</span>
-            </p>
-
-            <p class="text" style="margin-top: 0;">
-              <span class="text-bold">Наименование получателя</span><br>
-              <a class="text-to-copy">БО БФ БЛАГОРОДНИЙ БО</a><br>
-
-              <span class="text-bold">Код получателя</span><br>
-              <a class="text-to-copy">43232411</a><br>
-
-              <span class="text-bold">Счет получателя</span><br>
-              <a class="text-to-copy">26001055752253</a><br>
-
-              <span class="text-bold">Счет в формате согласно стандарту IBAN</span><br>
-              <a class="text-to-copy">UA093133990000026001055752253</a><br>
-
-              <span class="text-bold">Название Банка</span><br>
-              <a class="text-to-copy">ЗАПОРIЗЬКЕ РУ АТ КБ "ПРИВАТБАНК"</a><br>
-
-              <span class="text-bold">Код Банка (МФО)</span><br>
-              <a class="text-to-copy">313399</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!--    <section class="requisites-mobile" id="requisites">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="props__props-info">-->
+<!--            <h2 class="props__secondary-title">Реквизиты</h2>-->
+<!--            <p class="text">Сбор средств на строительство церкви в Запорожье:</p>-->
+<!--            <p class="text">-->
+<!--              <span class="text-bold">Приват (UAH):</span>-->
+<!--              <a class="text-to-copy">5169-3305-2003-6481</a>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text">-->
+<!--              <span class="text-bold">Приват (USD):</span>-->
+<!--              <a class="text-to-copy">UA683133990000026002055754164</a>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text">-->
+<!--              <span class="text-bold">Биткоин:</span>-->
+<!--              <a class="text-to-copy">3CsZZKTqYFV2noNRkiFHwmtMnxpTkJiJuk</a>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text">-->
+<!--              <span class="text-bold">Лайткоин:</span>-->
+<!--              <a class="text-to-copy">MWunNZPUacRrZ8deSxTby68eu1WNzqCeyV</a>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text text--semititle">-->
+<!--              <span class="text-bold">Платежи по реквизитам</span>-->
+<!--            </p>-->
+<!---->
+<!--            <p class="text" style="margin-top: 0;">-->
+<!--              <span class="text-bold">Наименование получателя</span><br>-->
+<!--              <a class="text-to-copy">БО БФ БЛАГОРОДНИЙ БО</a><br>-->
+<!---->
+<!--              <span class="text-bold">Код получателя</span><br>-->
+<!--              <a class="text-to-copy">43232411</a><br>-->
+<!---->
+<!--              <span class="text-bold">Счет получателя</span><br>-->
+<!--              <a class="text-to-copy">26001055752253</a><br>-->
+<!---->
+<!--              <span class="text-bold">Счет в формате согласно стандарту IBAN</span><br>-->
+<!--              <a class="text-to-copy">UA093133990000026001055752253</a><br>-->
+<!---->
+<!--              <span class="text-bold">Название Банка</span><br>-->
+<!--              <a class="text-to-copy">ЗАПОРIЗЬКЕ РУ АТ КБ "ПРИВАТБАНК"</a><br>-->
+<!---->
+<!--              <span class="text-bold">Код Банка (МФО)</span><br>-->
+<!--              <a class="text-to-copy">313399</a>-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
 
     <section class="contacts" id="contacts">
       <div class="contacts__map"></div>
