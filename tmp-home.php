@@ -162,7 +162,7 @@ get_header();
           <div class="activities__wrapper">
             <div class="activities__service">
               <div class="activities__serv-img-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blagotvor.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.png"
                      alt=""
                      class="activities__serv-img">
               </div>
@@ -174,7 +174,7 @@ get_header();
 
             <div class="activities__service">
               <div class="activities__serv-img-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/food-and-meds.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2.png"
                      alt=""
                      class="activities__serv-img">
               </div>
@@ -186,7 +186,7 @@ get_header();
 
             <div class="activities__service">
               <div class="activities__serv-img-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/money.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/3.png"
                      alt=""
                      class="activities__serv-img">
               </div>
@@ -198,7 +198,7 @@ get_header();
 
             <div class="activities__service">
               <div class="activities__serv-img-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/auctions.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/4.png"
                      alt=""
                      class="activities__serv-img">
               </div>
@@ -210,7 +210,7 @@ get_header();
 
             <div class="activities__service">
               <div class="activities__serv-img-box">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commerce.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/5.png"
                      alt=""
                      class="activities__serv-img">
               </div>
@@ -220,27 +220,27 @@ get_header();
 
           <div class="activities__wrapper activities__wrapper--mobile">
             <div class="activities__service">
-              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blagotvor.png" alt="blagotvor" class="activities__serv-img"></div>
+              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.png" alt="blagotvor" class="activities__serv-img"></div>
               <p class="text">Открыть/восстановить/организовать сеть детских кружков «БЛАГОРОДНЫЙ» по
                 подготовке детей к школе по всем районам Запорожья</p>
             </div>
             <div class="activities__service">
-              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/food-and-meds.png" alt="food-and-meds" class="activities__serv-img"></div>
+              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/2.png" alt="food-and-meds" class="activities__serv-img"></div>
               <p class="text">Безвозмездно помогать ремонтом/реконструкцией школам и садикам (обновление
                 спортзалов и спортплощадок)</p>
             </div>
             <div class="activities__service">
-              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/money.png" alt="money" class="activities__serv-img"></div>
+              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/3.png" alt="money" class="activities__serv-img"></div>
               <p class="text">Строить за счћт фонда Благородный детские площадки и юношеские спортплощадки во
                 дворах по городу Запорожье, по Украине</p>
             </div>
             <div class="activities__service">
-              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/auctions.png" alt="auctions" class="activities__serv-img"></div>
+              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/4.png" alt="auctions" class="activities__serv-img"></div>
               <p class="text">Создать сайт где люди смогут получить помощь вещами или отдать свои ненужные вещи
                 нуждающимся/благотворительные аукционы</p>
             </div>
             <div class="activities__service">
-              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commerce.png" alt="commerce" class="activities__serv-img"></div>
+              <div class="activities__serv-img-box"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/5.png" alt="commerce" class="activities__serv-img"></div>
               <p class="text">Восстанавливать разрушенные/строить новые церкви в селах по Украине</p>
             </div>
           </div>
