@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Pavlo Knyazevich
 Author URI: https://github.com/Knyazevich
 Description: Custom theme: Blagorodnyi, developed by Pavlo Knyazevich
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: mst_blag
@@ -243,7 +243,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .header__nav-link:hover::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 88px;
   height: 33px;
   display: block;
@@ -277,7 +277,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .props::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -291,7 +291,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .props::after {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -395,7 +395,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 190px;
   height: 72px;
   display: block;
@@ -409,7 +409,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives::after {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -423,7 +423,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives__bg-cloud-1 {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 185px;
   height: 70px;
   display: block;
@@ -438,7 +438,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives__bg-cloud-2 {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 141px;
   height: 53px;
   display: block;
@@ -460,7 +460,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .objectives__title::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -514,7 +514,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   object-position: center;
   width: 100%;
   height: 100%;
-} 
+}
 
 .activities {
   min-height: 825px;
@@ -575,13 +575,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
   justify-content: space-between;
 }
 
-/*.activities__service:nth-last-child(1), */
-/*.activities__service:nth-last-child(2),*/
-/*.activities__service:nth-last-child(3) {*/
-  /*width: 31%;*/
-  /*margin-bottom: 0;*/
-/*}*/
-
 .activities__desc {
   margin: 0 auto;
   margin-top: 60px;
@@ -620,7 +613,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .result::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 369px;
   height: 139px;
   display: block;
@@ -635,7 +628,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .result::after {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 204px;
   height: 77px;
   display: block;
@@ -653,7 +646,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .result__title::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -690,6 +683,26 @@ h5 {font-size: 16px; letter-spacing: normal;}
   top: -50px;
 }
 
+.result__social-images {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.result__social-link {
+  height: 200px;
+  display: block;
+}
+
+.result__social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.result__social-link:first-child {
+  margin-right: 30px;
+}
+
 .reports {
   position: relative;
   overflow-x: hidden;
@@ -697,7 +710,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .reports::after {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 439px;
   height: 166px;
   display: block;
@@ -717,7 +730,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .reports__title::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -739,8 +752,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .reports__gallery-row {
-  /*display: flex;*/
-  /*justify-content: space-between;*/
   width: 100%;
   margin-bottom: 10px;
 }
@@ -751,12 +762,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 .reports__gallery-row--top .reports__gallery-img-box {
-  /*width: 32.5%;*/
   height: 200px;
 }
 
 .reports__gallery-row--bottom .reports__gallery-img-box {
-  /*width: 19.5%;*/
   height: 150px
 }
 
@@ -791,7 +800,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .reports__gallery-desc p {
   margin: 0;
   color: #fff;
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 
 .reports__gallery-img {
@@ -815,7 +824,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
-  background-size: contain; 
+  background-size: contain;
   border: none;
   cursor: pointer;
 }
@@ -878,7 +887,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .help::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 421px;
   height: 158px;
   display: block;
@@ -892,7 +901,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 .help::after {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 259px;
   height: 98px;
   display: block;
@@ -907,7 +916,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .help__cloud-bg {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 119px;
   height: 44px;
   display: block;
@@ -926,7 +935,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .help__title::before {
   content: '';
-  background-image: url(assets/images/icons/cloud.svg);
+  background-image: url(assets/images/icons/cloud.png);
   width: 250px;
   height: 93px;
   display: block;
@@ -969,7 +978,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 .help__footer-bg {
   width: 100%;
   min-height: 439px;
-  background-image: url(assets/images/park.png);
+  background-image: url(assets/images/park.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -977,6 +986,10 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
 .help__qr {
   text-align: left;
+}
+
+.help__img {
+  max-width: 552px;
 }
 
 .contacts {
@@ -1325,7 +1338,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 @media screen and (min-width: 769px) {
   .header__nav-list-item.header__nav-list-item--active .header__nav-link::before {
     content: '';
-    background-image: url(assets/images/icons/cloud.svg);
+    background-image: url(assets/images/icons/cloud.png);
     width: 88px;
     height: 33px;
     display: block;
@@ -1357,7 +1370,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .header__nav-list-item:not(:last-child) {
     margin-right: 18px;
   }
@@ -1373,7 +1386,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
   .props__props-info {
     width: 296px;
-    /*height: 333px;*/
     height: auto;
     padding: 20px 15px;
   }
@@ -1395,10 +1407,15 @@ h5 {font-size: 16px; letter-spacing: normal;}
     max-width: 405px;
   }
 
+  .result__social-images {
+    justify-content: center;
+  }
+
   .result__img-box {
     margin-left: 15px;
     width: 275px;
     height: 272px;
+    display: none;
   }
 
   .result__img {
@@ -1446,9 +1463,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
   .popup__container {
     width: 70%;
-    /*height: 800px;*/
     height: 90vh;
-    /*min-height: 800px;*/
     overflow: scroll;
   }
 
@@ -1476,13 +1491,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
   }
 }
 
-/*@media screen and (max-width: 782px) {
-  .admin-bar .header {
-    top: 46px;
-  }
-}*/
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .header__nav {
     display: none;
   }
@@ -1689,7 +1698,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
   }
 
   .requisites-mobile {
-    /*display: block;*/
     min-height: 377px;
     background-color: #198D37;
     padding-bottom: 14px;
@@ -1744,12 +1752,6 @@ h5 {font-size: 16px; letter-spacing: normal;}
 }
 
 @media screen and (max-width: 576px) {
-/*  .header__mobile-row,
-  .header__mobile-nav-menu-box,
-  .header__mob-open-menu {
-    padding: 0 15px;
-  }*/
-
   .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -1770,9 +1772,7 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
   .popup__container {
     width: 95%;
-    /*height: 570px;*/
     height: 90vh;
-    /*min-height: 570px;*/
   }
 
   .page-404-img-box {
@@ -1801,5 +1801,18 @@ h5 {font-size: 16px; letter-spacing: normal;}
 
   .popup__img-box {
     height: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .help::before,
+  .result::before,
+  .objectives::after,
+  .objectives__title::before {
+    display: none;
+  }
+
+  .result::after {
+    top: 18%;
   }
 }

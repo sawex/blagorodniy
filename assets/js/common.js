@@ -166,11 +166,7 @@ Main.prototype.initActivitiesSlider = function() {
   jQuery('.activities__wrapper--mobile').slick({
     responsive: [
       {
-        breakpoint: 99999,
-        settings: 'unslick'
-      },
-      {
-        breakpoint: 992,
+        breakpoint: 1200,
         settings: {
           prevArrow: jQuery('.activities .reports__gallery-nav-btn--prev'),
           nextArrow: jQuery('.activities .reports__gallery-nav-btn--next'),
@@ -179,79 +175,14 @@ Main.prototype.initActivitiesSlider = function() {
           autoplaySpeed: 5000,
         }
       }
-    ]
-  });
-
-  // window.addEventListener('resize', () => {
-  //   jQuery('.activities__wrapper--mobile').slick('refresh')
-  // });
-};
-
-Main.prototype.initReportsSlider = function() {
-  if (typeof jQuery !== 'function') return;
-
-  const prevBtn = document.querySelector('.reports .reports__gallery-nav-btn--prev');
-  const nextBtn = document.querySelector('.reports .reports__gallery-nav-btn--next');
-
-  const options = {
-    arrows: false,
-    dots: false,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  };
-
-  jQuery('.reports__gallery-row--top').slick({
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
-    ...options,
   });
 
-  jQuery('.reports__gallery-row--bottom').slick({
-    slidesToShow: 5,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-    ...options,
+  window.addEventListener('resize', () => {
+    if (window.matchMedia('(max-width: 768px)')) {
+      jQuery('.activities__wrapper--mobile').slick('refresh');
+    }
   });
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      jQuery('.reports__gallery-row--top').slick('slickPrev');
-      jQuery('.reports__gallery-row--bottom').slick('slickPrev');
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      jQuery('.reports__gallery-row--top').slick('slickNext');
-      jQuery('.reports__gallery-row--bottom').slick('slickNext');
-    });
-  }
 };
 
 /**
@@ -309,7 +240,6 @@ Main.prototype.init = function () {
   this.initContactsCollapseButton();
   this.initClipboardSaver();
   this.initActivitiesSlider();
-  // this.initReportsSlider();
   this.initMap();
 };
 

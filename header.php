@@ -36,9 +36,6 @@
             <li class="header__nav-list-item">
               <a href="#result" class="header__nav-link">Результаты</a>
             </li>
-<!--            <li class="header__nav-list-item">-->
-<!--              <a href="#reports" class="header__nav-link">Отчеты</a>-->
-<!--            </li>-->
             <li class="header__nav-list-item">
               <a href="#help" class="header__nav-link">Помощь</a>
             </li>
@@ -75,11 +72,8 @@
               <li class="header__nav-list-item">
                 <a href="#objectives" class="header__nav-link">Цели</a>
               </li>
-<!--              <li class="header__nav-list-item">-->
-<!--                <a href="#reports" class="header__nav-link">Отчеты</a>-->
-<!--              </li>-->
               <li class="header__nav-list-item">
-                <a href="#requisites" class="header__nav-link">Реквизиты</a>
+                <a href="#help" class="header__nav-link">Реквизиты</a>
               </li>
               <li class="header__nav-list-item">
                 <a href="#contacts" class="header__nav-link">Контакты</a>
@@ -103,9 +97,6 @@
                 <li class="header__nav-list-item">
                   <a href="#result" class="header__nav-link">Результаты</a>
                 </li>
-<!--                <li class="header__nav-list-item">-->
-<!--                  <a href="#reports" class="header__nav-link">Отчеты</a>-->
-<!--                </li>-->
                 <li class="header__nav-list-item">
                   <a href="#help" class="header__nav-link">Помощь</a>
                 </li>

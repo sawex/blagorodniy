@@ -8,7 +8,7 @@
  */
 
 if ( ! defined( 'MST_BLAG_VER' ) ) {
-  define( 'MST_BLAG_VER', '1.0.6' );
+  define( 'MST_BLAG_VER', '1.0.7' );
 }
 
 if ( ! function_exists( 'mst_blag_setup' ) ) :
@@ -190,7 +190,24 @@ function mst_blag_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'mst_blag_scripts' );
+
+function mst_blag_render_inline_scripts() {
+?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121620703-9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121620703-9');
+  </script>
+<?php
+}
+
+add_action( 'wp_footer', 'mst_blag_render_inline_scripts' );
 
 /**
  * Implement the Custom Header feature.
